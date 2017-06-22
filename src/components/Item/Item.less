@@ -1,0 +1,18 @@
+@boxSize: 40px;
+
+.item {
+  width: @boxSize;
+  height: @boxSize;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item__circle {
+  width: calc(@boxSize - 7px);
+  height: calc(@boxSize - 7px);
+  border-radius: 50%;
+  background: black;
+  transition-property: opacity;
+}

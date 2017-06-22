@@ -2,7 +2,7 @@
 
 let app = require('app');
 const http = require('http');
-const debug = require('debug')('just-dance:server');
+const debug = require('debug')('test_task_digirial:server');
 const port = 3000;
 
 app.set('port', port);

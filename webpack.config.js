@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/app.js'
+    app: './src/containers/Root'
   },
   devtool: 'source-map',
   module: {
@@ -16,11 +16,15 @@ module.exports = {
           { loader: 'css-loader', options: { importLoaders: 1 } },
           'less-loader'
         ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'raw-loader'
       }
     ]
   },
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'public')
   }
 }
